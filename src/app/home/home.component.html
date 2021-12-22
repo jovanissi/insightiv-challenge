@@ -1,3 +1,5 @@
+<app-nav-bar></app-nav-bar>
+
 <div>
   <section class="top-section">
     <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'">
@@ -24,7 +26,7 @@
     </div>
   </section>
 
-  <section class="solution-section">
+  <section class="solution-section" id="solution-section">
     <div class="mtop-30">
       <h2 class="color-primary center-text">Our Solution</h2>
     </div>
@@ -52,7 +54,7 @@
     <br><br>
   </section>
 
-  <section class="supported-modalities-section">
+  <section class="supported-modalities-section" id="modalities">
     <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'">
       <div fxFlex="35" class="supported-modalities-card">
         <h1 class="color-white bold-text center-text">Suppored Modalities</h1>
@@ -80,7 +82,7 @@
     <br>
   </section>
 
-  <section class="reach-section">
+  <section class="reach-section" id="regions">
     <div class="mtop-30">
       <h2 class="color-primary center-text">Supported Regions</h2>
     </div>
