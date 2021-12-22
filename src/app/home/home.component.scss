@@ -1,0 +1,127 @@
+
+.top-section {
+    width: 100%;
+    background-image: url('../../assets/images/top-image-1.jpg');
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+    // padding-left: 30px;
+    // padding-right: 30px;
+}
+
+
+.welcome-section {
+    margin-left: 120px;
+}
+
+.solution-section {
+    padding: 30px;
+    background-color: #e1f5fe;
+    border-bottom-left-radius: 80% 180px !important;
+    border-bottom-right-radius: 80% 180px !important;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.solution-cards-wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.solution-card {
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 15px;
+    text-align: center;
+}
+
+.solution-card img {
+    height: 110px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.supported-modalities-section {
+    margin-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.supported-modalities-card {
+    border-radius: 30px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    padding: 30px;
+}
+
+.supported-modalities-image-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: url("../../assets/images/ct_viewer.png");
+    background-size: cover;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.supported-modalities-image-wrapper img {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    left: -10px;
+}
+
+.reach-section {
+    // margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #e1f5fe;
+    border-top-left-radius: 80% 180px !important;
+    border-top-right-radius: 80% 180px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.reach-section-desc {
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .welcome-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .supported-modalities-section {
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .reach-section {
+        // margin-top: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #e1f5fe;
+        border-top-left-radius: 80% 180px !important;
+        border-top-right-radius: 80% 180px !important;
+        position: relative;
+        overflow: hidden;
+    }
+
+}

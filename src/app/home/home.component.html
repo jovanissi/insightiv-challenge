@@ -1,0 +1,108 @@
+<div>
+  <section class="top-section">
+    <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'">
+      <div fxFlex="30%" class="welcome-section">
+        <h1 class="color-white bold-text center-text">Insightiv Diagnostics Platform</h1>
+        <br>
+        <div class="mtop-30 full-width">
+          <p class="color-white large-text center-text">
+            Hybrid teleradiology platform for medical imaging diagnostics and research.
+          </p>
+          <br>
+          <p class="color-white center-text medium-text lighter-text">
+            Combining PACS, extensive Imaging Viewer and Artificial Intelligence screening capabilities in a single platform.
+          </p>
+          <br>
+          <div class="center-content">
+            <button mat-raised-button color="primary" class="pleft-30 pright-30 ptop-10 pbottom-10">
+              <span class="large-text lighter-text">Try Now!</span>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="solution-section">
+    <div class="mtop-30">
+      <h2 class="color-primary center-text">Our Solution</h2>
+    </div>
+
+    <div>
+      <p class="large-text lighter-text center-text">Feature-rich medical image viewer, in-workflow reporting and so much more!</p>
+    </div>
+    <br>
+    <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'" fxLayoutGap="30px" class="mtop-30">
+      <div fxFlex="5"></div>
+      <div fxFlex class="solution-card">
+        <img src="../../assets/images/x-ray.png" />
+        <p class="lighter-text">A wide range of DICOM modalities can be viewed in a web based cross-platform DICOM viewer that can be accessed on any devices with a web browser and an internet connection.</p>
+      </div>
+      <div fxFlex class="solution-card">
+        <img src="../../assets/images/report.png" />
+        <p class="lighter-text">In-workflow reporting allows medical imaging specialists to create and submit report using a single platform.</p>
+      </div>
+      <div fxFlex class="solution-card">
+        <img src="../../assets/images/cloud-data.png" />
+        <p class="lighter-text">Being a cloud-based system, Insightiv Diagnostics Platform allows clinic owners to focus on patient care rather than technical issues. We take care of the platform maintenance, upgrades and deployments.</p>
+      </div>
+      <div fxFlex="5"></div>
+    </div>
+    <br><br>
+  </section>
+
+  <section class="supported-modalities-section">
+    <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'">
+      <div fxFlex="35" class="supported-modalities-card">
+        <h1 class="color-white bold-text center-text">Suppored Modalities</h1>
+        <br>
+        <p class="lighter-text large-text">We support different Modalities including:</p>
+
+        <div [class]="(isHandset$ | async) ? '' : 'mleft-30'">
+          <p class="bolder-text larger-text">Computer Tomography (CT)</p>
+          <p class="bolder-text larger-text">Magnetic Resonance (MR)</p>
+          <p class="bolder-text larger-text">Computed Radiography (CR)</p>
+          <p class="bolder-text larger-text">X-Ray</p>
+          <p class="bolder-text larger-text">Ultrasound (US)</p>
+          <p class="bolder-text larger-text">Mammography (MG)</p>
+        </div>
+        <br>
+        <p class="lighter-text large-text">
+          The viewer is customized to provide tools based on the image modality being viewed, this allows medical image specialists to access a wide range of tools for better analysis.
+        </p>
+      </div>
+
+      <div fxFlex="65" class="supported-modalities-image-wrapper">
+        <!-- <img src="../../assets/images/ct_viewer.png" /> -->
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <section class="reach-section">
+    <div class="mtop-30">
+      <h2 class="color-primary center-text">Supported Regions</h2>
+    </div>
+    <br>
+    <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'">
+      <div fxFlex="50">
+        <img src="../../assets/images/diagnostics_regions_on_map_2.png"/>
+      </div>
+      <div fxFlex="50" class="reach-section-desc">
+        <p class="larger-text bolder-text center-text">
+          Insightiv Diagnostics Platform is designed to be deployable in any cloud or on-premises environment.
+        </p>
+
+        <p class="large-text lighter-text">
+          Due to data localization and data residency laws, different nations require citizen's data to be collected, processed, and/or stored inside the country. Insightiv Diagnostics Platform is already deployed in three different continents with four different deployments, Boston - USA, Paris - France, Cape Town - South Africa, Kigali - Rwanda.
+          <br><br>
+          Insightiv diagnostics platform can be deployed in any other region upon request.
+          Reach out to <a href="mailto:info@insightiv.ai">info@insightiv.ai </a> for any inquiries.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<app-footer></app-footer>
