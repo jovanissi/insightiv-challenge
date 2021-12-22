@@ -105,6 +105,31 @@
       </div>
     </div>
   </section>
+
+  <section class="partners-section" id="partners">
+    <div class="mtop-30">
+      <h2 class="color-primary center-text">Our Partners</h2>
+    </div>
+    <br>
+    <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'" fxLayoutGap="30px">
+      <div fxFlex="20" class="partner-card"> 
+        <img src="../../assets/images/insightiv-logo.jpeg"/>
+      </div>
+      <div fxFlex="20" class="partner-card"> 
+        <img src="../../assets/images/insightiv-logo.jpeg"/>
+      </div>
+      <div fxFlex="20" class="partner-card"> 
+        <img src="../../assets/images/insightiv-logo.jpeg"/>
+      </div>
+      <div fxFlex="20" class="partner-card"> 
+        <img src="../../assets/images/insightiv-logo.jpeg"/>
+      </div>
+      <div fxFlex="20" class="partner-card"> 
+        <img src="../../assets/images/insightiv-logo.jpeg"/>
+      </div>
+    </div>
+    <br>
+  </section>
 </div>
 
 <app-footer></app-footer>
