@@ -8,13 +8,16 @@ import { HomeComponent } from './home/home.component';
 import { MaterialsModule } from './materials/materials.module';
 import { FooterComponent } from './footer/footer.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ShapeService } from './services/shape.service';
+import { CanvasComponent } from './canvas/canvas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FooterComponent,
-    NavBarComponent
+    NavBarComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     BrowserAnimationsModule,
     MaterialsModule,
   ],
-  providers: [],
+  providers: [ShapeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

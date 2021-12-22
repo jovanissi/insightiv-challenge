@@ -16,7 +16,8 @@
           </p>
           <br>
           <div class="center-content">
-            <button mat-raised-button color="primary" class="pleft-30 pright-30 ptop-10 pbottom-10">
+            <button mat-raised-button color="primary" class="pleft-30 pright-30 ptop-10 pbottom-10"
+            [routerLink]="['/canvas']">
               <span class="large-text lighter-text">Try Now!</span>
             </button>
           </div>
@@ -112,20 +113,30 @@
     </div>
     <br>
     <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'" fxLayoutGap="30px">
-      <div fxFlex="20" class="partner-card"> 
-        <img src="../../assets/images/insightiv-logo.jpeg"/>
+      <div fxFlex="20" class="partner-card">
+        <a href="#">
+          <img src="../../assets/images/insightiv-logo.jpeg"/>
+        </a> 
       </div>
       <div fxFlex="20" class="partner-card"> 
-        <img src="../../assets/images/insightiv-logo.jpeg"/>
+        <a href="#">
+          <img src="../../assets/images/insightiv-logo.jpeg"/>
+        </a> 
       </div>
       <div fxFlex="20" class="partner-card"> 
-        <img src="../../assets/images/insightiv-logo.jpeg"/>
+        <a href="#">
+          <img src="../../assets/images/insightiv-logo.jpeg"/>
+        </a> 
       </div>
       <div fxFlex="20" class="partner-card"> 
-        <img src="../../assets/images/insightiv-logo.jpeg"/>
+        <a href="#">
+          <img src="../../assets/images/insightiv-logo.jpeg"/>
+        </a> 
       </div>
       <div fxFlex="20" class="partner-card"> 
-        <img src="../../assets/images/insightiv-logo.jpeg"/>
+        <a href="#">
+          <img src="../../assets/images/insightiv-logo.jpeg"/>
+        </a> 
       </div>
     </div>
     <br>
