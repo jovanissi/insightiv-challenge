@@ -113,27 +113,27 @@
     </div>
     <br>
     <div [fxLayout]="(isHandset$ | async) ? 'column' : 'row'" fxLayoutGap="30px">
-      <div fxFlex="20" class="partner-card">
+      <div fxFlex="20" class="partner-card" data-aos="fade-down" data-aos-duration="300">
         <a href="#">
           <img src="../../assets/images/insightiv-logo.jpeg"/>
         </a> 
       </div>
-      <div fxFlex="20" class="partner-card"> 
+      <div fxFlex="20" class="partner-card" data-aos="fade-down" data-aos-duration="400"> 
         <a href="#">
           <img src="../../assets/images/insightiv-logo.jpeg"/>
         </a> 
       </div>
-      <div fxFlex="20" class="partner-card"> 
+      <div fxFlex="20" class="partner-card" data-aos="fade-down" data-aos-duration="500"> 
         <a href="#">
           <img src="../../assets/images/insightiv-logo.jpeg"/>
         </a> 
       </div>
-      <div fxFlex="20" class="partner-card"> 
+      <div fxFlex="20" class="partner-card" data-aos="fade-down" data-aos-duration="600"> 
         <a href="#">
           <img src="../../assets/images/insightiv-logo.jpeg"/>
         </a> 
       </div>
-      <div fxFlex="20" class="partner-card"> 
+      <div fxFlex="20" class="partner-card" data-aos="fade-down" data-aos-duration="700"> 
         <a href="#">
           <img src="../../assets/images/insightiv-logo.jpeg"/>
         </a> 
@@ -141,6 +141,56 @@
     </div>
     <br>
   </section>
+
+  <div class="feedback-btn-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+    <button mat-fab color="primary" (click)="showFeedback = !showFeedback">
+      <mat-icon>feedback</mat-icon>
+    </button>
+  </div>
+
+  <div class="feedback-card-wrapper" *ngIf="showFeedback" data-aos="fade-up" data-aos-duration="500">
+    <mat-card>
+      <div class="feedback-desc">
+        <p class="margin-0 medium-text lighter-text">
+          Greetings from Insightiv Team!
+You can leave a feedback ranging from feature requests to error reports.
+We are happy to hear from you.
+        </p>
+      </div>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Full Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Subject</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Your feedback</mat-label>
+        <textarea matInput rows="5"></textarea>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" class="">
+        <span class="large-text lighter-text">Send</span>
+      </button>
+    </mat-card>
+  </div>
+
+  <!-- <div class="dropup">
+    <button class="dropbtn">Dropup</button>
+    <div class="dropup-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> -->
 </div>
 
 <app-footer></app-footer>

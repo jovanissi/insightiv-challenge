@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ShapeService } from './services/shape.service';
 import { CanvasComponent } from './canvas/canvas.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CanvasComponent } from './canvas/canvas.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialsModule,
+    CarouselModule
   ],
   providers: [ShapeService],
   bootstrap: [AppComponent]

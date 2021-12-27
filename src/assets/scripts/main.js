@@ -1,4 +1,3 @@
-
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
@@ -14,3 +13,11 @@ $(window).scroll(function() {
         // $('header').slideDown();
     }
 });
+
+// $('').click(function() {
+//     if ($('').styles.display === 'none') {
+//         $('').styles.display === 'block'
+//     } else {
+//         $('').styles.display === 'none'
+//     }
+// })
