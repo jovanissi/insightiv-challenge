@@ -21,7 +21,7 @@
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: #17a2b8;
+  background-color: #fff;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -47,7 +47,7 @@ header a {
 header .upper-header{
   width: 100%;
   padding: 0 20px;
-  background-color: #e1f5fe;
+  background-color: #17a2b8;
   // height: 100px;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@ header .sticky-header{
 	visibility:hidden;
 	width: 100%;
   padding: 0 20px;
-  background-color: #e1f5fe;
+  background-color: #17a2b8;
   // height: 100px;
   display: flex;
   justify-content: space-between;
@@ -129,7 +129,7 @@ ul {
 }
 
 ul a {
-  color: #17a2b8;
+  color: #fff;
   font-weight: lighter;
 }
 
@@ -150,20 +150,20 @@ ul li:hover {
 }
 
 #login {
-  border: 1px solid #17a2b8;
+  border: 1px solid #fff;
 }
 
 #signup {
-  border: 1px solid #17a2b8;
-  background-color: #17a2b8;
+  border: 1px solid #e1f5fe;
+  background-color: #e1f5fe;
 }
 
 #signup a {
-  color: #fff;
+  color: #17a2b8;
 }
 
 #login a {
-  color: #17a2b8;
+  color: #fff;
 }
 
 .mobile-menu {
@@ -174,7 +174,7 @@ ul li:hover {
   height: calc(100vh - 200px);
   width: 100%;
   top: 120px;
-  background-color: #e1f5fe;
+  background-color: #17a2b8;
   z-index: 999;
   padding-right: 20px;
 }
